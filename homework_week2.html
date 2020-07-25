@@ -87,8 +87,8 @@
                     url: "https://api.manana.kr/exchange/rate.json",
                     data: {},
                     success: function (response) {
-                        let rate = response[1]["rate"];
-                        let html_temp = `<h5>달러/원 환율: ${rate} </h5>`;
+                        let rate = response[1]["rate"]
+                        let html_temp = `<h5>달러/원 환율: ${rate} </h5>`
                         $("#krw-dollar").append(html_temp)
                     }
                 })
