@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>homework_spicyTaste200718</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@500&display=swap"
+          rel="stylesheet">
+
+    <!-- Style-->
+    <style>
+
+        * {
+            font-family: 'Black Han Sans', sans-serif;
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        .picture {
+            content: url("https://i.ytimg.com/vi/mCqLSXFRG60/maxresdefault.jpg");
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        .area-1 {
+            width: 600px;
+            margin: auto;
+        }
+
+        .area-2 {
+            width: 600px;
+            margin: auto;
+            font-size: 10px;
+        }
+
+        .order-button {
+            width: 100px;
+            margin: 30px auto;
+        }
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.')
+        }
+
+    </script>
+
+</head>
+<body>
+<!-- Product image-->
+<div class="picture"></div>
+
+<!-- Title & explanation -->
+
+<div class="area-1">
+
+    <h1 class="title"> 가정용 간편식! 맛도 영양도 훌~륭한 반조리 삼계탕 <span style="font-size: 20px"> 가격: 7,000원/1인분 </span></h1>
+    <p> 복날의 단골손님이자 보양식의 대표주자, 바로 삼계탕이죠. 닭은 오장을 안정시키고 몸을 따뜻하게 효과가 있는 음식이랍니다.
+        오늘 저녁, 굳이 삼계탕 전문점 방문하지 마시고 집에서 간편하게 즐길 수 있는 즉석 반조리 삼계탕 제품 어떠요? </p>
+</div>
+
+<!-- Order page--->
+<div class="area-2">
+    <h1> 주문하기 </h1>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">주문자 이름</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">수량</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>--수량을 선택하세요--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+        </select>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">전화번호</san>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+</div>
+
+<div class="area-3">
+    <div class="order-button">
+        <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+    </div>
+
+</div>
+</body>
+
+</html>
